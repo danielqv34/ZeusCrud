@@ -1,0 +1,48 @@
+<dataSource name="MySQL - springcrud@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="springcrud">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="personas" />
+    <column id="3" parent="2" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>int(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="4" parent="2" name="NOMBRE">
+      <mandatory>1</mandatory>
+      <data-type>varchar(70)|0</data-type>
+    </column>
+    <column id="5" parent="2" name="APELLIDO">
+      <mandatory>1</mandatory>
+      <data-type>varchar(70)|0</data-type>
+    </column>
+    <column id="6" parent="2" name="CEDULA">
+      <mandatory>1</mandatory>
+      <data-type>char(11)|0</data-type>
+    </column>
+    <column id="7" parent="2" name="CORREELECTRONICO">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="8" parent="2" name="FECHANACIMIENTO">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="9" parent="2" name="FECHAREGISTRO">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="10" parent="2" name="FECHAACTUALIZACION">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="11" parent="2" name="ESTADO">
+      <mandatory>1</mandatory>
+      <data-type>char(2)|0</data-type>
+    </column>
+    <key id="12" parent="2" name="PRIMARY">
+      <columns>ID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
